@@ -1,5 +1,11 @@
 import React from 'react';
 
+/**
+ * Componente de ícone SVG para o "WhatsApp".
+ * @param {object} props - Propriedades do componente.
+ * @param {string} [props.className="h-8 w-8"] - Classes CSS para estilizar o ícone.
+ * @returns {React.ReactElement} O ícone SVG do WhatsApp renderizado.
+ */
 const WhatsAppIcon: React.FC<{ className?: string }> = ({ className = "h-8 w-8" }) => (
     <svg 
         xmlns="http://www.w3.org/2000/svg"

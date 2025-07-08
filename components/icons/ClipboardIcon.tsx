@@ -1,6 +1,12 @@
-
 import React from 'react';
 
+/**
+ * Componente de ícone SVG de uma prancheta (Clipboard).
+ * Usado para a ação de "copiar".
+ * @param {object} props - Propriedades do componente.
+ * @param {string} [props.className="h-6 w-6"] - Classes CSS para estilizar o ícone.
+ * @returns {React.ReactElement} O ícone SVG da prancheta renderizado.
+ */
 const ClipboardIcon: React.FC<{ className?: string }> = ({ className = "h-6 w-6" }) => (
     <svg 
         xmlns="http://www.w3.org/2000/svg" 
@@ -9,6 +15,7 @@ const ClipboardIcon: React.FC<{ className?: string }> = ({ className = "h-6 w-6"
         viewBox="0 0 24 24" 
         stroke="currentColor" 
         strokeWidth={2}
+        aria-hidden="true"
     >
         <path 
             strokeLinecap="round" 

@@ -1,5 +1,12 @@
 import React from 'react';
 
+/**
+ * Componente de ícone SVG para "Chat".
+ * Representa um balão de conversa.
+ * @param {object} props - Propriedades do componente.
+ * @param {string} [props.className="h-8 w-8"] - Classes CSS para estilizar o ícone.
+ * @returns {React.ReactElement} O ícone SVG de chat renderizado.
+ */
 const ChatIcon: React.FC<{ className?: string }> = ({ className = "h-8 w-8" }) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -1,11 +1,21 @@
 import React from 'react';
 import ChatIcon from './icons/ChatIcon';
 
-const FloatingWhatsAppButton: React.FC = () => {
-    const WHATSAPP_NUMBER = "5511954872180";
-    const WHATSAPP_MESSAGE = "Olá! Gostaria de agendar um horário na Barbearia Novo Styllo.";
-    const CTA_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+// --- Constantes --- //
 
+const WHATSAPP_NUMBER = "5511954872180";
+const WHATSAPP_MESSAGE = "Olá! Gostaria de agendar um horário na Barbearia Novo Styllo.";
+const CTA_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+
+
+// --- Componente Principal --- //
+
+/**
+ * Componente do botão flutuante de WhatsApp.
+ * Fica fixo no canto da tela para facilitar o contato.
+ * @returns {React.ReactElement} O botão flutuante renderizado.
+ */
+const FloatingWhatsAppButton: React.FC = () => {
     return (
         <a
             href={CTA_LINK}
