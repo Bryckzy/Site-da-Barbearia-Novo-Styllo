@@ -1,6 +1,5 @@
 
 import React from 'react';
-import WhatsAppIcon from './icons/WhatsAppIcon';
 
 const Footer: React.FC = () => {
     const WHATSAPP_NUMBER = "5511954872180";
@@ -20,7 +19,11 @@ const Footer: React.FC = () => {
 
                 <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
                      <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-2xl font-bold hover:text-amber-400 transition-colors duration-300">
-                        <WhatsAppIcon />
+                        <img 
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png"
+                            alt="WhatsApp"
+                            className="h-8 w-8"
+                        />
                         (11) 95487-2180
                     </a>
                     <a href={CTA_LINK} target="_blank" rel="noopener noreferrer" className="bg-amber-400 text-black font-bold text-lg py-4 px-8 rounded-lg uppercase tracking-wider hover:bg-amber-500 transform hover:scale-105 transition-all duration-300 ease-in-out shadow-xl">

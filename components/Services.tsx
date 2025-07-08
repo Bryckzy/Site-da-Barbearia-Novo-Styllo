@@ -1,22 +1,22 @@
+
 import React from 'react';
 
 interface Service {
     name: string;
-    icon: string; // Emoji
-    ariaLabel: string;
+    emoji: string;
 }
 
 const services: Service[] = [
-    { name: 'Corte Masculino', icon: '✂️', ariaLabel: 'Tesoura' },
-    { name: 'Corte Infantil', icon: '👦', ariaLabel: 'Menino' },
-    { name: 'Barba e Acabamento', icon: '🧔‍♂️', ariaLabel: 'Homem com barba' },
-    { name: 'Sobrancelha', icon: '🧵', ariaLabel: 'Rolo de linha' },
-    { name: 'Pomadas e Produtos', icon: '🫙', ariaLabel: 'Pote' },
+    { name: 'Corte Masculino', emoji: '✂️' },
+    { name: 'Corte Infantil', emoji: '👦' },
+    { name: 'Barba e Acabamento', emoji: '🧔' },
+    { name: 'Sobrancelha', emoji: '👁️' },
+    { name: 'Pomadas e Produtos', emoji: '🧴' },
 ];
 
 const ServiceCard: React.FC<{ service: Service }> = ({ service }) => (
     <div className="bg-zinc-800 p-8 rounded-lg text-center flex flex-col items-center justify-center transform hover:-translate-y-2 transition-transform duration-300 shadow-lg border border-zinc-700 hover:border-amber-400">
-        <div className="text-5xl mb-4" role="img" aria-label={service.ariaLabel}>{service.icon}</div>
+        <span className="text-5xl mb-4" role="img" aria-label={service.name}>{service.emoji}</span>
         <h3 className="text-xl font-bold">{service.name}</h3>
     </div>
 );
