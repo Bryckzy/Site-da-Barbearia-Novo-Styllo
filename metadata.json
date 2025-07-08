@@ -1,5 +1,6 @@
 {
   "name": "Barbearia Novo Styllo",
   "description": "Um site elegante e profissional para a Barbearia Novo Styllo, com foco em cortes modernos, atendimento de qualidade e uma forte presença local em São Bernardo do Campo.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [],
+  "prompt": ""
 }
